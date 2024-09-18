@@ -159,9 +159,7 @@ header {
 
 /*============= TOP STYLES =============*/
 .section-top {
-  margin-bottom: 120px;
-  padding-bottom: 188px;
-  padding-top: 188px;
+  padding: 188px 472px;
   background-color: #2e2f42;
 }
 .top-title {
@@ -202,8 +200,7 @@ header {
 .section-adv {
   padding-left: 156px;
   padding-right: 156px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .adv-list {
   display: flex;
