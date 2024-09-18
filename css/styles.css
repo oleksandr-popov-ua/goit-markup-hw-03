@@ -80,8 +80,15 @@ header {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
 }
+
+.menu-item {
+  margin-right: 40px;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+
 .logo-link-header {
   display: block;
   padding-top: 24px;
@@ -126,7 +133,14 @@ header {
 .header-contacts {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+}
+
+.contact-item {
+  margin-right: 40px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
 }
 .contact-link {
   display: block;
@@ -147,11 +161,11 @@ header {
 .section-top {
   margin-bottom: 120px;
   padding-bottom: 188px;
+  padding-top: 188px;
   background-color: #2e2f42;
 }
 .top-title {
   max-width: 496px;
-  padding-top: 188px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -165,6 +179,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
   padding: 16px 32px;
   border-radius: 4px;
   font-weight: 500;
@@ -187,10 +202,11 @@ header {
 .section-adv {
   padding-left: 156px;
   padding-right: 156px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .adv-list {
   display: flex;
-  column-gap: 24px;
 }
 
 .adv-name {
@@ -203,6 +219,11 @@ header {
 }
 .adv-item {
   width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+
+.adv-item:last-child {
+  margin-right: 0;
 }
 .adv-descr {
   font-size: 16px;
@@ -219,15 +240,21 @@ header {
 
 .team-list {
   display: flex;
-  column-gap: 24px;
 }
 
 .team-item {
-  background-color: #ffffff;
-  padding-bottom: 32px;
+  margin-right: 24px;
   width: calc((100% -72px) / 4);
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+}
+.team-item:last-child {
+  margin-right: 0;
 }
 
+.team-descr {
+  padding: 32px 0;
+}
 .team-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -254,9 +281,6 @@ header {
   color: #434455;
 }
 
-.team-img {
-  margin-bottom: 32px;
-}
 /*============= /TEAM STYLES =============*/
 
 /*============= PORTF STYLES =============*/
@@ -281,9 +305,7 @@ header {
   width: 360px;
 }
 .portf-underline {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -308,17 +330,15 @@ header {
 /*============= FOOTER STYLES =============*/
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-.page-footer-container {
-  padding: 100px 1020px 100px 156px;
-}
 .footer-block {
   width: 264px;
 }
 
 .logo-link-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -332,6 +352,7 @@ header {
   color: #f4f4fd;
 }
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
